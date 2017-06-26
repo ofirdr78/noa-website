@@ -16,13 +16,10 @@
   <img src="/assets/right.jpg" class="arrowright" draggable="false" (click)=rightArrowClicked()>
 
 
-  <!--<img *ngFor="let photo of photoList" [src]="photo.path" class="thumbnail" [title]="photo.title" [ngClass]="{'selected': photo.path === currentPhoto}"
-    draggable="false" (click)=PhotoClicked(photo)>-->
-
-
-
-
-
+  <div *ngFor="let photo of photoList" class="thumbnail-wrapper">
+    <img [src]="photo.path" class="thumbnail" [title]="photo.title" [ngClass]="{'selected': photo.path === currentPhoto}" draggable="false"
+      (click)="photoClicked(photo)">
+  </div>
 </body>
 
 

@@ -36,11 +36,8 @@ export class TestComponent implements OnInit {
   }
 
 
-  PhotoClicked(photo) {
-    this.currentPhoto = photo.path;
-    // this.currentPos = photo.pos;
-    // this.currentTitle = photo.title;
-
+  photoClicked(photo) {
+    this.currentPhoto = photo;
   }
 
   leftArrowClicked() {
