@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+ 
+  </head>
+<body>
+  
+
+ <img *ngIf="currentPos == 1" [src]="currentPhoto" class="LargePhoto"  draggable="false">
+ 
+ <img *ngIf="currentPos == 2" [src]="currentPhoto" class="LargePhoto"  draggable="false">
+
+ <img *ngIf="currentPos == 3" [src]="currentPhoto" class="LargePhoto"  draggable="false">
+ 
+ <img *ngIf="currentPos == 4" [src]="currentPhoto" class="LargePhoto"  draggable="false">
+
+ <img *ngIf="currentPos == 5" [src]="currentPhoto" class="LargePhoto"  draggable="false">
+
+  <div class="title"> {{currentTitle}} </div>
+
+<!--
+ <img src="/assets/left.jpg" class="arrowleft" draggable="false" (click)=LeftArrowClicked($event) >
+-->
+
+ <img *ngFor="let photo of photoList" src={{photo.path}} class="thumbnail" title={{photo.title}} [ngClass]="{'selected': photo.path === currentPhoto}"  draggable="false" (click)=PhotoClicked(photo) > 
+
+<!--
+ <img src="/assets/right.jpg" class="arrowright" draggable="false"(click)=RightArrowClicked($event) > 
+-->
+
+</body>
+  
+
+</html>
