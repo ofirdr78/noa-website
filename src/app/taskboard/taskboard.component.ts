@@ -7,12 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./taskboard.component.css']
 })
 export class TaskboardComponent implements OnInit {
-  
-
   constructor() { }
-  
   ngOnInit() {
   }
-
-
 }
