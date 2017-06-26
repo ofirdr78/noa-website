@@ -17,7 +17,7 @@
 
 
   <div *ngFor="let photo of photoList" class="thumbnail-wrapper">
-    <img [src]="photo.path" class="thumbnail" [title]="photo.title" [ngClass]="{'selected': photo.path === currentPhoto}" draggable="false"
+    <img [src]="photo.path" class="thumbnail" [title]="photo.title" [ngClass]="{'selected': photo === currentPhoto}" draggable="false"
       (click)="photoClicked(photo)">
   </div>
 </body>

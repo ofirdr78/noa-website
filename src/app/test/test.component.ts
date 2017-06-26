@@ -12,14 +12,6 @@ export class TestComponent implements OnInit {
   photoList: { path: string; title: string; }[];
   currentPhoto: { path: string; title: string; };
 
-  // currentPos = 1;
-
-  // currentPhoto = this.photoList[0].path;
-
-  // currentTitle = this.photoList[0].title;
-
-  // currentClass = 'thumbnail';
-
   constructor() {
     this.photoList = [
       { path: '/assets/makeup1.jpg', title: 'Makeup' },
