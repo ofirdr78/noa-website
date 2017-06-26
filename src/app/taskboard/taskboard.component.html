@@ -1,11 +1,6 @@
 
-<div align="center" class="bar">
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Home </a>
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Gallery </a>
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Makeup </a> 
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Videos </a> 
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Prices </a> 
-<a href="#" class="button hvr-underline-from-left" draggable="false"> Contact Us </a> 
+<div *ngFor="let option of menubar" class="menubar-wrapper">
+<a href="#" class="buttonbar" draggable="false"> {{option.name}} </a>
 </div>
 
 <!--

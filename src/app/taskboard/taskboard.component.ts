@@ -7,7 +7,18 @@ import * as $ from 'jquery';
   styleUrls: ['./taskboard.component.css']
 })
 export class TaskboardComponent implements OnInit {
-  constructor() { }
+  menubar: { name: string;}[];
+
+  constructor()
+   { 
+     this.menubar = [
+      { name: 'דף הבית' },
+      { name: 'גלריה' },
+      { name: 'מוצרים' },
+      { name: 'מי אני' },
+      { name: "צרו קשר" }];
+
+   }
   ngOnInit() {
   }
 }

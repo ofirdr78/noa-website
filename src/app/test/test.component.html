@@ -10,14 +10,14 @@
   <div *ngFor="let photo of photoList">
     <img *ngIf="currentPhoto === photo" [src]="photo.path" class="LargePhoto" draggable="false">
   </div>
-  <div class="title"> {{currentPhoto.title}} </div>
+  <!--<div class="title"> {{currentPhoto.title}} </div>-->
 
-  <img src="/assets/left.jpg" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
-  <img src="/assets/right.jpg" class="arrowright" draggable="false" (click)=rightArrowClicked()>
+  <!--<img src="/assets/left.jpg" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
+  <img src="/assets/right.jpg" class="arrowright" draggable="false" (click)=rightArrowClicked()>-->
 
 
   <div *ngFor="let photo of photoList" class="thumbnail-wrapper">
-    <img [src]="photo.path" class="thumbnail" [title]="photo.title" [ngClass]="{'selected': photo === currentPhoto}" draggable="false"
+    <img [src]="photo.path" class="thumbnail"  [ngClass]="{'selected': photo === currentPhoto}" draggable="false"
       (click)="photoClicked(photo)">
   </div>
 </body>
