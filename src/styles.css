@@ -1,5 +1,3 @@
 body {
-    background: black;
-    background: linear-gradient(-90deg, black, rgb(77, 0, 77), black);
-    color: black;
+    background: linear-gradient(to right, black, rgb(51, 51, 77), black);
 }

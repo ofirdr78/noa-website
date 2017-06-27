@@ -1,54 +1,42 @@
 .buttonbar {
     cursor: pointer;
     position: relative;
-    display: block;
-    font-family: "Tahoma";
-    top: 100px;
-    margin-top: 15px;
-    margin-left: 1660px;
+    top: 20px;
+    left: 10px;
     text-align: center;
     width: 210px;
-    height: 40px;
-    font-size:  25px;
-    border: 2px solid black;
-    border-radius: 8px;
-    opacity: 0.8;
+    height: 50px;
+    font-size:  30px;
     text-decoration: none;
-    color: black;
-    line-height: 38px;
-    background-color: rgba(216, 216, 216, 0.35);
+    line-height: 9px;
+    color: rgb(51, 51, 77);
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+    
+ 
 }
 
 .buttonbar:hover {
-   cursor: pointer;
-    color: rgb(77, 0, 77);
-    background-color: rgb(224, 224, 235);
     cursor: pointer;
     position: relative;
-    display: block;
-    font-family: "Tahoma";
-    top: 100px;
-    margin-top: 15px;
-    margin-left: 1660px;
+    top: 18px;
+    left: 10px;
     text-align: center;
     width: 210px;
-    height: 40px;
-    font-size: 25px;
-    border: 2px solid black;
-    border-radius: 8px;
-    opacity: 0.8;
+    height: 50px;
+    font-size:  30px;
     text-decoration: none;
-    line-height: 38px;
-  
-
-
+    line-height: 9px;
+    color: white;
+    
+ 
 }
+
 
 .menubar-wrapper{
+   position: absolute;
+   top: 100px;
+   left: 19%;
    display: inline-flex;
-}
-
-.logo {
-  position: absolute;
-  top: 14px;
+   background: linear-gradient( rgb(51, 51, 77), black, rgb(51, 51, 77));
 }
