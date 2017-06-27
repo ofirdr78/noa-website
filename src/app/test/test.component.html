@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-</head>
 
 <body>
 
-  <div *ngFor="let photo of photoList">
-    <img *ngIf="currentPhoto === photo" [src]="photo.path" class="LargePhoto" draggable="false">
-  </div>
-  <!--<div class="title"> {{currentPhoto.title}} </div>-->
+  <div *ngFor="let photo of photoList; let i of index;" >
+    <img *ngIf="photoList[currentIndex] === photo" [src]="photo.path" class="LargePhoto" draggable="false">
+  </div>-->
 
-  <!--<img src="/assets/left.jpg" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
-  <img src="/assets/right.jpg" class="arrowright" draggable="false" (click)=rightArrowClicked()>-->
+
+  <img src="/assets/arrowleft.png" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
+  <img src="/assets/arrowright.png" class="arrowright" draggable="false" (click)=rightArrowClicked()>
 
 
   <div *ngFor="let photo of photoList" class="thumbnail-wrapper">
-    <img [src]="photo.path" class="thumbnail"  [ngClass]="{'selected': photo === currentPhoto}" draggable="false"
+    <img [src]="photo.path" class="thumbnail" [ngClass]="{'selected': photoList[currentIndex] === photo}" draggable="false"
       (click)="photoClicked(photo)">
   </div>
+
+
 </body>
-
-
-</html>

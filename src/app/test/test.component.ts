@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TimerObservable } from 'rxjs/observable/TimerObservable';
+import { Subscription } from 'rxjs/Subscription'
+
 
 @Component({
   selector: 'app-test',
@@ -11,6 +14,11 @@ export class TestComponent implements OnInit {
 
   photoList: { path: string; title: string; }[];
   currentPhoto: { path: string; title: string; };
+  
+  currentIndex = 0;
+
+  private tick: string;
+  private subscription: Subscription;
 
   constructor() {
     this.photoList = [
@@ -21,35 +29,63 @@ export class TestComponent implements OnInit {
       { path: '/assets/makeup5.jpg', title: 'Makeup box 2' }];
 
     this.currentPhoto = this.photoList[0];
+   
+   
   }
 
   ngOnInit() {
+    this.startTimer();
+  }
 
+   ngOnDestroy() {
+    this.killTimer();
   }
 
 
   photoClicked(photo) {
-    this.currentPhoto = photo;
+    this.currentIndex = this.photoList.indexOf(photo);
+    this.killTimer();
+    this.startTimer();
+  
+
   }
 
   leftArrowClicked() {
-    const indexOfCurrentPhoto = this.photoList.indexOf(this.currentPhoto);
-    if (indexOfCurrentPhoto >= 1) {
-      this.currentPhoto = this.photoList[indexOfCurrentPhoto - 1];
+     this.killTimer();
+    this.startTimer();
+    if ( this.currentIndex>= 1) {
+      this.currentIndex -=1;
       return;
     }
 
-    this.currentPhoto = this.photoList[this.photoList.length - 1];
+    this.currentIndex = this.photoList.length - 1;
+    
   }
 
-  rightArrowClicked(event) {
-    const indexOfCurrentPhoto = this.photoList.indexOf(this.currentPhoto);
-    if (indexOfCurrentPhoto < this.photoList.length - 1) {
-      this.currentPhoto = this.photoList[indexOfCurrentPhoto + 1];
+  rightArrowClicked() {
+     this.killTimer();
+    this.startTimer();
+    if ( this.currentIndex < this.photoList.length - 1) {
+      this.currentIndex +=1;
       return;
     }
 
-    this.currentPhoto = this.photoList[0];
+    this.currentIndex = 0;
+  }
+
+  moveIndex(){
+    this.currentIndex = (this.currentIndex + 1) % this.photoList.length;
+  }
+
+  startTimer () {
+    let timer = TimerObservable.create(7000, 7000);
+    this.subscription = timer.subscribe(t => {
+      this.moveIndex();
+       });
+  }  
+  
+  killTimer() {
+    this.subscription.unsubscribe();
   }
 
 }

@@ -1,9 +1,35 @@
 .buttonbar {
     cursor: pointer;
-    font-family: "Guttman Calligraphic Regular";
-    left: 20%;
+    position: relative;
+    display: block;
+    font-family: "Tahoma";
+    top: 100px;
     margin-top: 15px;
-    margin-left: 1360px;
+    margin-left: 1660px;
+    text-align: center;
+    width: 210px;
+    height: 40px;
+    font-size:  25px;
+    border: 2px solid black;
+    border-radius: 8px;
+    opacity: 0.8;
+    text-decoration: none;
+    color: black;
+    line-height: 38px;
+    background-color: rgba(216, 216, 216, 0.35);
+}
+
+.buttonbar:hover {
+   cursor: pointer;
+    color: rgb(77, 0, 77);
+    background-color: rgb(224, 224, 235);
+    cursor: pointer;
+    position: relative;
+    display: block;
+    font-family: "Tahoma";
+    top: 100px;
+    margin-top: 15px;
+    margin-left: 1660px;
     text-align: center;
     width: 210px;
     height: 40px;
@@ -12,27 +38,17 @@
     border-radius: 8px;
     opacity: 0.8;
     text-decoration: none;
-    color: pink;
-    background-color: rgb(51, 51, 77);
-}
+    line-height: 38px;
+  
 
-.buttonbar:hover {
-   cursor: pointer;
-    font-family: "Guttman Calligraphic Regular";
-    margin-top: 15px;
-    margin-left: 1360px;
-    text-align: center;
-    width: 210px;
-    height: 40px;
-    font-size: 25px;
-    border: 2px solid black;
-    border-radius: 8px;
-    text-decoration: none;
-    color: rgb(77, 0, 77);
-    background-color: rgb(224, 224, 235);
+
 }
 
 .menubar-wrapper{
-    display: flex;
+   display: inline-flex;
 }
 
+.logo {
+  position: absolute;
+  top: 14px;
+}
