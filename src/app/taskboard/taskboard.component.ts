@@ -8,7 +8,8 @@ import * as $ from 'jquery';
 })
 export class TaskboardComponent implements OnInit {
   menubar: { name: string;}[];
-
+  flag = false;
+  
   constructor()
    { 
      this.menubar = [
