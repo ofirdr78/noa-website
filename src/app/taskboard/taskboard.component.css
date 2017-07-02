@@ -7,15 +7,15 @@
 	filter: blur(0px);
     font-family: Guttmann Yad;
     white-space: nowrap;
-    color: white;
-    font-size: 57px;
+    font-size: 40px;
     top: 130px;
-    left: 1500px;
+	color: black;
+    margin-left: 15px;
     text-decoration: none;
-	display: block;
+	display: inline;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 16px 16px 16px black;
+	text-shadow: 16px 16px 16px white;
 	letter-spacing: 1px;
 	-moz-transform: scale(0.5); 
 	-ms-transform: scale(0.5); 
@@ -41,11 +41,10 @@
 }
     
  
-
 .buttonbar:hover {
     cursor: pointer;
 	filter: blur(0px);
-	text-shadow: 6px 6px 6px black;
+	text-shadow: 3px 3px 3px black;
 	-moz-transform: scale(1); 
 	-ms-transform: scale(1); 
 	-o-transform: scale(1); 
@@ -55,24 +54,17 @@
 	
 }
  
-
 .menubar-wrapper{
-
-   position: absolute;
+    position: absolute;
    	color: transparent;
-    top: 240px;
-    left: 1650px;
+    top: 145px;
+    left: 490px;
     -webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */ 
     flex: 1;
-    display: block;
-	text-shadow:1px 1px 1px #fff;
-	background:black;
+    display: inline;
+	background:white;
 	padding:3px 6px;
-	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.6);
-	-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.6);
-	box-shadow:1px 1px 2px rgba(0,0,0,0.6);
-	filter: blur(0px);
 
 
 }
@@ -80,56 +72,5 @@
 @font-face {
    font-family: Guttmann Yad;
    src: url(/assets/GYADL.woff);
-}
-
-.bmenu{
-	text-decoration: none;
-	font-family: Guttmann Yad;
-    padding: 0px;
-    margin: 0 0 10px 0;
-    position: relative;
-}
-.bmenu li{
-
-	font-family: Guttmann Yad;
-	text-decoration: none;
-    font-size: 50px;
-    display: block;
-}
-.bmenu li a{
-		font-size: 60px;
-	text-decoration: none;
-	font-family: Guttmann Yad;
-	white-space: nowrap;
-	color: transparent;
-	display: block;
-	text-transform: uppercase;
-	text-align: center;
-	text-shadow: 0px 0px 6px #fff;
-	letter-spacing: 1px;
-	-moz-transform: scale(0.5); 
-	-ms-transform: scale(0.5); 
-	-o-transform: scale(0.5); 
-	-webkit-transform: scale(0.5); 
-	transform: scale(0.5); 
-	-webkit-transition: all 0.6s linear;
-	-moz-transition: all 0.6s linear;
-	-o-transition: all 0.6s linear;
-	-ms-transition: all 0.6s linear;
-	transition: all 0.6s linear;
-}
-.bmenu:hover li a{
-		font-family: Guttmann Yad;
-	text-shadow: 0px 0px 15px #fff;
-}
-.bmenu li a:hover{
-	
-	font-family: Guttmann Yad;
-	text-shadow: 0px 0px 1px #fff;
-	-moz-transform: scale(1); 
-	-ms-transform: scale(1); 
-	-o-transform: scale(1); 
-	-webkit-transform: scale(1); 
-	transform: scale(1); 
 }
 

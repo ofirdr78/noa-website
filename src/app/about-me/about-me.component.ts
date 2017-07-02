@@ -30,6 +30,7 @@ export class AboutMeComponent implements OnInit {
     this.audio.load();
     this.audio.play();
     this.audio.loop = true;
+    this.audio.controls = true;
 
    }
   ngOnInit() {
