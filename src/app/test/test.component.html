@@ -6,14 +6,17 @@
   </div>
 
 
-  <img src="/assets/arrowleft.png" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
-  <img src="/assets/arrowright.png" class="arrowright" draggable="false" (click)=rightArrowClicked()>
+  <!--<img src="/assets/arrowleft.png" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
+  <img src="/assets/arrowright.png" class="arrowright" draggable="false" (click)=rightArrowClicked()>-->
 
 
-  <div *ngFor="let photo of photoList" class="thumbnail-wrapper">
+  <!--<div *ngFor="let photo of photoList" class="thumbnail-wrapper">
     <img [src]="photo.path" class="thumbnail" [ngClass]="{'selected': photoList[currentIndex] === photo}" draggable="false"
       (click)="photoClicked(photo)">
-  </div>
+  </div>-->
 
+  <div *ngFor="let photo of photoList" class="circle-wrapper">
+    <img  class="circle" [ngClass]="{'selectedcircle': photoList[currentIndex] === photo}"  draggable="false" (click)="photoClicked(photo)">
+  </div>
 
 </body>

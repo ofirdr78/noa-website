@@ -14,14 +14,14 @@ hr {
     border: white;
     padding: 1px;
     position: absolute;
-    width: 1680px;
+    width: 1795px;
     height: 650px;
     left: 3%;
     top: 25.3%;
     color: black;
-    background: white(0, 0, 0, 0.8);
+    box-shadow: 0 0 1px 1px black;
 
-     -webkit-animation: in2 3s;
+     -webkit-animation: in2 2s;
      
 }
 
@@ -98,8 +98,9 @@ body {
 
 @-webkit-keyframes in2 {
 
-    0%   {opacity: 0;}
-    100%  {opacity: 1;}
+    0%   {opacity: 0; }
+    100%  {opacity: 1; }
+
 }
 
 .selected {
@@ -136,4 +137,35 @@ body {
 
     0%   {width: 0;}
     100%  {width: 250px;}
+}
+
+.circle {
+    background: gray;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    background: black;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+
+.circle-wrapper{
+    display: inline;
+    cursor: pointer;
+    top: 890px;
+    left: 47.6%;
+    margin-left: 12px;
+    position: relative;
+}
+
+.selectedcircle {
+    background: black;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;  
 }
