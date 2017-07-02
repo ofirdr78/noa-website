@@ -29,7 +29,11 @@
     "core-js": "^2.4.1",
     "hover.css": "^2.2.0",
     "jquery": "^3.2.1",
+    "mplayer": "^2.1.0",
     "ng-image-gallery": "^2.1.2",
+    "ng2-slideable-directive": "^1.0.13",
+    "ng2-slider-component": "^1.0.9",
+    "ng2-styled-directive": "^1.0.5",
     "rxjs": "^5.1.0",
     "typescript-mysql-model": "^1.1.36",
     "zone.js": "^0.8.4"

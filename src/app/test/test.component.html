@@ -3,7 +3,7 @@
 
   <div *ngFor="let photo of photoList; let i of index;" >
     <img *ngIf="photoList[currentIndex] === photo" [src]="photo.path" class="LargePhoto" draggable="false">
-  </div>-->
+  </div>
 
 
   <img src="/assets/arrowleft.png" class="arrowleft" draggable="false" (click)=leftArrowClicked()>
