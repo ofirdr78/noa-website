@@ -1,3 +1,22 @@
 body {
-    background: white;
+    background: -webkit-linear-gradient(to right, white, gray);
+    background: -moz-linear-gradient(to right, white, gray);
+    background: -o-linear-gradient(to right,white, gray);
+    background: linear-gradient(to right, white, gray);
+
+    width:1850px;
+    height:1000px;
+}
+
+@media screen and (min-width: 1366px) {
+#gallery-1 img {width:375px;}
+}
+@media screen and (min-width: 1440px) {
+#gallery-1 img {width:428px;}
+}
+@media screen and (min-width: 1600px) {
+#gallery-1 img {width:434px;}
+}
+@media screen and (min-width: 1920px) {
+#gallery-1 img {width:540px;}
 }

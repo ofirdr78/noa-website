@@ -7,15 +7,15 @@
 	filter: blur(0px);
     font-family: Guttmann Yad;
     white-space: nowrap;
-    font-size: 40px;
-    top: 130px;
-	color: black;
+    font-size: 60px;
+    top: 230px;
+	color: #EA048F;
     margin-left: 15px;
+	text-shadow: 3px 3px 3px black;
     text-decoration: none;
 	display: inline;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 16px 16px 16px white;
 	letter-spacing: 1px;
 	-moz-transform: scale(0.5); 
 	-ms-transform: scale(0.5); 
@@ -40,10 +40,9 @@
 
 }
     
- 
 .buttonbar:hover {
     cursor: pointer;
-	filter: blur(0px);
+	color: #C5B358;
 	text-shadow: 3px 3px 3px black;
 	-moz-transform: scale(1); 
 	-ms-transform: scale(1); 
@@ -57,13 +56,12 @@
 .menubar-wrapper{
     position: absolute;
    	color: transparent;
-    top: 145px;
-    left: 440px;
+    top: 280px;
+    left: 670px;
     -webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */ 
     flex: 1;
     display: inline;
-	background:white;
 	padding:3px 6px;
 
 
@@ -72,5 +70,6 @@
 @font-face {
    font-family: Guttmann Yad;
    src: url(/assets/GYADL.woff);
+ 
 }
 

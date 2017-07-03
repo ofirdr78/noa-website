@@ -12,15 +12,11 @@ hr {
 .LargePhoto {
    
     border: white;
-    padding: 1px;
     position: absolute;
-    width: 1580px;
+    width: 100%;
     height: 650px;
-    left: 3%;
-    top: 25.3%;
-    color: black;
-    box-shadow: 0 0 1px 1px black;
-
+    left: 0%;
+    top: 0%;
      -webkit-animation: in2 2s;
      
 }
@@ -157,7 +153,7 @@ body {
 .circle-wrapper{
     display: inline;
     cursor: pointer;
-    top: 890px;
+    top: 650px;
     left: 47.6%;
     margin-left: 12px;
     position: relative;
@@ -169,3 +165,20 @@ body {
     height: 13px;
     border-radius: 50%;  
 }
+
+
+@font-face {
+   font-family: Guttmann Yad;
+   src: url(/assets/GYADL.woff);
+}
+
+.openingText  {
+    position: absolute;
+    top: 710px;
+    left: 330px;
+	font-size: 22px;
+    font-family: Guttmann Yad;
+    white-space: nowrap;
+    color: #EA048F;
+    text-shadow: 1px 1px 1px black;
+}   
