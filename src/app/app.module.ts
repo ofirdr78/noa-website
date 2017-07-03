@@ -1,12 +1,18 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { TaskboardComponent } from './taskboard/taskboard.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { TestComponent } from './test/test.component';
+import { LandingComponent } from './landing/landing.component';
+import { routes } from 'app/routes';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContentComponent } from './content/content.component';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
@@ -14,9 +20,14 @@ import { TestComponent } from './test/test.component';
     TaskboardComponent,
     AboutMeComponent,
     TestComponent,
-    
+    LandingComponent,
+    GalleryComponent,
+    ContentComponent,
+    ColorDirective,
+
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     NgbModule.forRoot()
   ],
