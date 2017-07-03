@@ -60,6 +60,7 @@
   width: 200px;
   height: 180px;
   
+  
 }
 
 .bigstand {
@@ -70,17 +71,22 @@
 
 .stand:hover {
   filter: grayscale(100%);
+  transform: rotate(-7deg);
+  opacity: 0.8;
 
 }
 
 .box:hover {
   filter: grayscale(100%);
+  transform: rotate(7deg);
+  opacity: 0.8;
   
 }
 
 .bigstand:hover {
   filter: grayscale(100%);
-  
+  transform: rotate(7deg);
+  opacity: 0.8;
 }
 
 .LargePhoto {
