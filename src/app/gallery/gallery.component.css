@@ -1,24 +1,71 @@
+.gallery {
+  position: absolue;
+  top: 10px;
+  left: 100px;
+  top: 0px;
+  left: 0px;
+
+}
+
 .thumbnail-wrapper {
   position: relative;
-  top: 300px;
-  left: 200px;
-  display: inline;
+  top: 200px;
+  left: 340px;
+  display: block;
+  padding: 0px;
+}
+
+.thumbnail-wrapper2 {
+  position: relative;
+  top: -721px;
+  left: 545px;
+  margin-top: 1px;
+  display: block;
+  padding: 0px;
+}
+
+.thumbnail-wrapper3 {
+  position: relative;
+  top: -1946px;
+  left: 750px;
+  margin-top: 1px;
+  display: block;
+  padding: 0px;
+}
+
+.thumbnail-wrapper4 {
+  position: relative;
+  top: -3086px;
+  left: 955px;
+  margin-top: 1px;
+  display: block;
+  padding: 0px;
+}
+
+.thumbnail-wrapper5 {
+  position: relative;
+  top: -4311px;
+  left: 1160px;
+  margin-top: 1px;
+  display: block;
   padding: 0px;
 }
 
 .stand {
-  width: 100px;
-  height: 200px;
+  width: 200px;
+  height: 240px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 180px;
+  
 }
 
-.lay {
+.bigstand {
   width: 200px;
-  height: 100px;
+  height: 280px;
+  
 }
 
 .stand:hover {
@@ -28,10 +75,25 @@
 
 .box:hover {
   filter: grayscale(100%);
-
+  
 }
 
-.lay:hover {
+.bigstand:hover {
   filter: grayscale(100%);
-
+  
 }
+
+.LargePhoto {
+   display: block; 
+   opacity: 1;
+    width: 950px; 
+    height: 1050px;
+    top: 190px; 
+    left: 400px; 
+    position: absolute;
+    margin: 0px;
+    background-color: black;
+     box-shadow: 0 0 50px 50px black;
+     
+}
+

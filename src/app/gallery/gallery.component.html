@@ -1,5 +1,33 @@
 
-<div *ngFor="let photo of photoList" class="thumbnail-wrapper">
-  <img [src]="photo.path"  [ngClass]="photo.class" draggable="false"
-    (click)="photoClicked(photo)">
+<div class="gallery">
+
+<div *ngFor="let photo of photoList1" class="thumbnail-wrapper">
+<img [src]="photo.path"  class="box" draggable="false"
+(click)="photoClicked(photo)">
+</div>
+
+<div *ngFor="let photo of photoList2" class="thumbnail-wrapper2">
+<img [src]="photo.path"  class="stand" draggable="false"
+(click)="photoClicked(photo)">
+</div>
+
+<div *ngFor="let photo of photoList3" class="thumbnail-wrapper3">
+<img [src]="photo.path"  class="bigstand" draggable="false"
+(click)="photoClicked(photo)">
+</div>
+
+<div *ngFor="let photo of photoList4" class="thumbnail-wrapper4">
+<img [src]="photo.path"  class="stand" draggable="false"
+(click)="photoClicked(photo)">
+</div>
+
+<div *ngFor="let photo of photoList5" class="thumbnail-wrapper5">
+<img [src]="photo.path"  class="box" draggable="false"
+(click)="photoClicked(photo)">
+</div>
+
+
+<img *ngIf="this.picked" [src]="bigphoto.path" class="LargePhoto" [title]="bigphoto.title" (click)="bigPhotoClicked()"/>
+
+
 </div>

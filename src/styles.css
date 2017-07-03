@@ -4,8 +4,8 @@ body {
     background: -o-linear-gradient(to right,white, #F0F0F0);
     background: linear-gradient(to right, white, #F0F0F0);
 
-    width:1850px;
-    height:1000px;
+    width:1600px;
+    height:900px;
 }
 
 @media screen and (min-width: 1366px) {
