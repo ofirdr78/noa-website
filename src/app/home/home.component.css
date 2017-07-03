@@ -1,0 +1,69 @@
+.menubar-wrapper{
+    position: absolute;
+   	color: transparent;
+    top: 20px;
+    left: 610px;
+    -webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+    display: inline;
+	padding:3px 6px;
+
+
+}
+
+@font-face {
+   font-family: Guttmann Yad;
+   src: url(/assets/GYADL.woff);
+}
+
+.buttonbar {
+	filter: blur(0px);
+    font-family: Guttmann Yad;
+    white-space: nowrap;
+    font-size: 30px;
+    top: 230px;
+	color: black;
+    margin-left: 15px;
+	text-shadow: 6px 6px 6px black;
+    text-decoration: none;
+	display: inline;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	-moz-transform: scale(0.5); 
+	-ms-transform: scale(0.5); 
+	-o-transform: scale(0.5); 
+	-webkit-transform: scale(0.5); 
+	transform: scale(0.5); 
+	-webkit-transition: all 0.6s linear;
+	-moz-transition: all 0.6s linear;
+	-o-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	transition: all 0.6s linear;
+  	-moz-transform: scale(0.5); 
+	-ms-transform: scale(0.5); 
+	-o-transform: scale(0.5); 
+	-webkit-transform: scale(0.5); 
+	transform: scale(0.5); 
+	-webkit-transition: all 0.6s linear;
+	-moz-transition: all 0.6s linear;
+	-o-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	transition: all 0.6s linear;
+
+}
+    
+.buttonbar:hover {
+    cursor: pointer;
+	color: #C5B358;
+	text-shadow: 1px 1px 1px black;
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+
+	
+}
+ 

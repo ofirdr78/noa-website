@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from 'app/landing/landing.component';
 import { GalleryComponent } from 'app/gallery/gallery.component';
-import { ContentComponent } from 'app/content/content.component';
+import { HomeComponent } from 'app/home/home.component';
 
 export const routes: Routes = [
   {
@@ -9,8 +9,8 @@ export const routes: Routes = [
     component: LandingComponent
   },
   {
-    path: 'content',
-    component: ContentComponent,
+    path: 'home',
+    component: HomeComponent,
     children: [
       {
         path: 'gallery',

@@ -11,7 +11,7 @@ import { TestComponent } from './test/test.component';
 import { LandingComponent } from './landing/landing.component';
 import { routes } from 'app/routes';
 import { GalleryComponent } from './gallery/gallery.component';
-import { ContentComponent } from './content/content.component';
+import { HomeComponent } from './home/home.component';
 import { ColorDirective } from './color.directive';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { ColorDirective } from './color.directive';
     TestComponent,
     LandingComponent,
     GalleryComponent,
-    ContentComponent,
+    HomeComponent,
     ColorDirective,
 
   ],

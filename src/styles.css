@@ -1,8 +1,8 @@
 body {
-    background: -webkit-linear-gradient(to right, white, gray);
-    background: -moz-linear-gradient(to right, white, gray);
-    background: -o-linear-gradient(to right,white, gray);
-    background: linear-gradient(to right, white, gray);
+    background: -webkit-linear-gradient(to right, white, #F0F0F0);
+    background: -moz-linear-gradient(to right, white, #F0F0F0);
+    background: -o-linear-gradient(to right,white, #F0F0F0);
+    background: linear-gradient(to right, white, #F0F0F0);
 
     width:1850px;
     height:1000px;
