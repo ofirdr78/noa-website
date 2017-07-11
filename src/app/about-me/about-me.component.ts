@@ -30,7 +30,7 @@ export class AboutMeComponent implements OnInit {
     this.audio.load();
     this.audio.play();
     this.audio.loop = true;
-    this.audio.volume = 1.0;
+    this.audio.volume = 0.5;
 
    }
   ngOnInit() {
@@ -52,7 +52,11 @@ export class AboutMeComponent implements OnInit {
     showValue(num) {
       this.value = num;
     } 
-
+ 
+    onSubmit(x) {
+      this.audio.volume=x/100;
+       console.log(this.audio.volume);
+    }
 
 
 }

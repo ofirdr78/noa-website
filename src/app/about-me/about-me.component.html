@@ -1,5 +1,10 @@
 <img [src]="mp3_button" class="mp3" (click)=clicked()/>
 
+<div id="slider">
+	<input class="bar" type="range" #volume id="rangeinput" value="50" (change)="onSubmit(volume.value)"/>
+	<span class="highlight"></span>
+	<output id="rangevalue">{{volume}}</output>
+</div>
 
 
 

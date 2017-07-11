@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs/Subscription'
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
-  styleUrls: ['./test.component.scss']
+  styleUrls: ['./test.component.css']
 
 })
 export class TestComponent implements OnInit {
